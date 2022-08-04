@@ -1,2 +1,2 @@
 # Javascript
-  [] The Basics
+  [x] The Basics
