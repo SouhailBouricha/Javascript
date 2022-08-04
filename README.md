@@ -1,2 +1,3 @@
-# Javascript
-  [x] The Basics
+# Javascript :
+
+  - The Basics
