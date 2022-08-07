@@ -12,6 +12,7 @@ switch(userinput.toLowerCase()){
         break;
     default:
         alert("I don't know what fruit is this")
+        break;
 
 }
 

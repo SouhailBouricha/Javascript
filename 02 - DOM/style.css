@@ -1,0 +1,23 @@
+.color{
+    color: red;
+    font-size: 50px;
+   
+}
+.i{
+    animation: id 0.5s ease;
+}
+.Website{
+    transition: all 0.5s ease;
+}
+@keyframes id {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.fad{
+    /* opacity: 0; */
+    text-decoration: line-through;
+}
