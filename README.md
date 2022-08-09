@@ -1,4 +1,4 @@
 # Javascript :
 
-  - The Basics
-  - The DOM
+  * [x] The Basics
+  * [x] The DOM
