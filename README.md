@@ -5,4 +5,4 @@
   - [x] The DOM
   - [x] Todo Project
   - [x] Arrays
-  - [] Objects
+  -  Objects
