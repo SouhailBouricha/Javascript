@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+img,i{
+    pointer-events: none;
+}
+.kick_pad,
+.snare_pad,.hihat_pad{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.hihat_pad{
+    background-color: rgb(130, 168, 219);
+}
+.kick_pad{
+    background-color: rgb(228, 147, 208);
+
+}
+.snare_pad{
+    background-color: rgb(231, 205, 148);
+
+}
+.hihat_pad.active{
+    background-color: rgb(67, 134, 221);
+}
+.kick_pad.active{
+    background-color: rgb(223, 62, 182);
+
+}
+.snare_pad.active{
+    background-color: rgb(223, 167, 47);
+
+}
+select{
+    margin-right: 2.5rem;
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.snare,.kick,.hihat{
+    display: flex;
+    align-items: center;
+    
+}
+.hihat_track,.kick_track,.snare_track{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.container{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 auto;
+}
+.hihat_volume,
+.kick_volume,
+.snare_volume{
+    background-color: gray;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.hihat_volume.active,
+.kick_volume.active,
+.snare_volume.active{
+    background-color: rgb(165, 164, 164);
+}
+.play{
+    background-color: gray;
+    outline: none;
+    border: none;
+    margin-top: 3rem;
+    padding: 0.7rem 2rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+.fa-solid{
+    pointer-events: none;
+}
+.range{
+    padding: 0.1rem;
+    -webkit-appearance: none;
+    color: white;
+    border-radius: 5rem;
+    cursor: pointer;
+    background-color: gray;
+    margin-bottom: 2rem;
+    width: 300px;
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+.tempo_info{
+    color: gray;
+    font-size: 1.2rem;
+    text-align: center;
+}
+@keyframes scale {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+@media screen and (max-width:1225px){
+    .hihat_track,.kick_track,.snare_track{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .hihat,.kick,.snare{
+        max-width: 768px;
+        width: 95%;
+    }
+    .controls{
+        max-width: 768px;
+        width: 95%;
+        /* padding: 0.5rem; */
+        margin-bottom: 2rem;
+    }
+    .hihat_volume,
+    .kick_volume,
+    .snare_volume{
+        margin-left: auto;  
+    }
+    select{
+        margin-right: 0;
+    }
+    .hihat_volume,
+    .kick_volume,
+    .snare_volume{
+        height: 37px;
+        margin-right: 1rem;
+        padding: 0.7rem;
+    }
+    .kick_pad,
+    .snare_pad,.hihat_pad{
+    /* width: 5rem;
+    height: 5rem;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease; */
+    flex: 1;
+    border: 1px black solid;
+    margin: 0;
+    }
+    .container{
+        width: 95%;
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .temp{
+        margin-bottom: 2rem;
+    }
+}

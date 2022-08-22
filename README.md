@@ -5,4 +5,5 @@
 - [x] Todo Project
 - [x] Arrays
 - [x] Objects
-- Beatmaker Project
+- [x] Beatmaker Project
+- Coloors Project
