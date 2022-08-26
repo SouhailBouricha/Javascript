@@ -1,6 +1,7 @@
 // you can copy an array by using a simpl trick = [...arrayName], you can split a string by using a split method ( split("") )
 // or you can concat by using concat methode or just using [...names] or [...num,...names] for both.
 
+
 const fruits = ["Bannana","Orange","Kiwi","Appel"];
 const Numbers = [5,1,6,3,22,2,10,9];
 
@@ -31,3 +32,5 @@ console.log(new_);
 const new_2 = [...fruits,...Numbers];
 
 console.log(new_2);
+// you can copy an array by using a simpl trick = [...arrayName], you can split a string by using a split method ( split("") )
+// or you can concat by using concat methode or just using [...names] or [...num,...names] for both.
