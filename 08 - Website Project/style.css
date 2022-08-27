@@ -15,18 +15,22 @@ body{
 section{
     background-color: #17181a;
     /* background: transparent; */
+    z-index: 0;
 }
 .nav-header{
     height: 10vh;
     width: 90%;
     margin: auto;
+    z-index: 1;
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
 }
 #logo{
     color: white;
     font-size: 1.5rem;
+    z-index: 50000;
     font-family: 'Abril Fatface', cursive;
 }
 
@@ -132,6 +136,7 @@ section{
     cursor: pointer;
 }
 
+
 .nav-bar{
     font-size: 4rem;
     flex-basis: 40rem;
@@ -187,7 +192,7 @@ section{
 .cursor.active{
     background-color: lightblue;
     transform: scale(3);
-    z-index: -1;
+    z-index: 0;
 }
 .cursor.exp{
     background-color: white;
@@ -220,7 +225,10 @@ section{
     height: 103%;
     mix-blend-mode: darken;
     transform: translateY(100%);
-} 
+}
+.hide{
+    overflow-y: hidden;
+}
 /* .hike-exp{
     transition: all 0.4s ease-in-out;
 } 

@@ -1,6 +1,7 @@
 let Controller;
 let Scene;
 let Scene2;
+const burger = document.querySelector(".burger");
 function AnimationSlides(){
     const slides = document.querySelectorAll(".slide");
     Controller = new ScrollMagic.Controller();
@@ -20,7 +21,7 @@ function AnimationSlides(){
         // gsap.to(revealimg,1,{display:"none"});
         Scene = new ScrollMagic.Scene({triggerElement:slide,triggerHook:0.25,reverse:false})
         .setTween(SlideTl)
-        .addIndicators({colorStart:"white",colorTrigger:"white",name:"Start Trigger"})
+        // .addIndicators({colorStart:"white",colorTrigger:"white",name:"Start Trigger"})
         .addTo(Controller)
         const PageTl = gsap.timeline();
         let nextSlide = slides.length === index - 1 ? "end" : slides[index + 1];
@@ -28,7 +29,7 @@ function AnimationSlides(){
         PageTl.fromTo(slide,{opacity : 1, scale : 1},{opacity : 0, scale : 0.5})
         PageTl.fromTo(nextSlide,{ y  : '50%'},{y : '0%'},'-=0.5')
         Scene2 = new ScrollMagic.Scene({triggerElement:slide,triggerHook:0,duration:'100%'})
-        .addIndicators({colorStart:"white",colorTrigger:"white",name:"Start Trigger",name:"page",indent:200})
+        //.addIndicators({colorStart:"white",colorTrigger:"white",name:"Start Trigger",name:"page",indent:200})
         .setPin(slide,{pushFollowers:false})
         .setTween(PageTl)
         .addTo(Controller);
@@ -63,4 +64,28 @@ function cursorAnimmate(e){
 
     }
 }
+
+burger.addEventListener("click",menuOpen);
+
+function menuOpen(e){
+    if(!e.target.classList.contains("open")){   
+        e.target.classList.add("open");
+        gsap.to(e.target.children[0],0.5,{rotate : '-45',y : 5,background : "black"});
+        gsap.to(e.target.children[1],0.5,{rotate : '45',y : -5,background : "black"});
+        gsap.to("#logo",0.5,{color : "black"});
+        gsap.to(".nav-bar",1,{ clipPath : "circle(2500px at 100% -10%)"});
+        document.body.classList.add("hide");
+    }
+    else{
+        e.target.classList.remove("open");
+        gsap.to(e.target.children[0],0.5,{rotate : '0',y : 0,background : "white"});
+        gsap.to(e.target.children[1],0.5,{rotate : '0',y : 0,background : "white"});
+        gsap.to("#logo",0.5,{color : "white"});
+        gsap.to(".nav-bar",1,{ clipPath : "circle(10px at 100% -10%)"});
+        document.body.classList.remove("hide");
+        
+    }
+    console.log(e.target.children[1]);
+}
+
 AnimationSlides();
