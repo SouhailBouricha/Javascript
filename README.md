@@ -6,4 +6,5 @@
 - [x] Arrays
 - [x] Objects
 - [x] Beatmaker Project
-- Coloors Project
+- [x] Coloors Project
+- Website Project

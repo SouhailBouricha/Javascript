@@ -18,7 +18,10 @@ function AnimationSlides(){
         SlideTl.fromTo(img,{ scale  : 2},{scale : 1},"-=1");
         SlideTl.fromTo(header,{ y  : '-100%'},{y : '0%'},"-=0.5");
         // gsap.to(revealimg,1,{display:"none"});
-        Scene = new ScrollMagic.Scene({triggerElement:slide,TriggerHook:0.25}).setTween(SlideTl).addIndicators({colorStrat:"white",colorTrigger:"white",name:"Start Trigger"}).addTo(Controller)
+        Scene = new ScrollMagic.Scene({triggerElement:slide,TriggerHook:0.25})
+        .setTween(SlideTl)
+        .addIndicators({colorStart:"white",colorTrigger:"white",name:"Start Trigger"})
+        .addTo(Controller)
     });
 
 }
