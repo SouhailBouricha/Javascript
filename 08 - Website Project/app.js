@@ -1,7 +1,6 @@
 let Controller;
 let Scene;
 let Scene2;
-
 function AnimationSlides(){
     const slides = document.querySelectorAll(".slide");
     Controller = new ScrollMagic.Controller();
@@ -36,5 +35,32 @@ function AnimationSlides(){
     });
 
 }
+window.addEventListener("mousemove", cursor);
+window.addEventListener("mouseover", cursorAnimmate);
+function cursor(e){
+    const cursorEle = document.querySelector(".cursor");
+    cursorEle.style.top = e.pageY + "px";
+    cursorEle.style.left = e.pageX + "px";
+}
 
+function cursorAnimmate(e){
+    const cursorEle = document.querySelector(".cursor");
+    if(e.target.id === "logo" || e.target.classList.contains("burger")){
+        cursorEle.classList.add("active");
+    }
+    else{
+        cursorEle.classList.remove("active");
+    }
+    if(e.target.classList.contains("explore")){
+        cursorEle.classList.add("exp");
+        cursorEle.innerText = "Tap"
+        gsap.to(".title-swip",{y : '0%'})
+    }
+    else{
+        cursorEle.classList.remove("exp");
+        cursorEle.innerText = "";
+        gsap.to(".title-swip",{y : '100%'})
+
+    }
+}
 AnimationSlides();

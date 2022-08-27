@@ -77,15 +77,18 @@ section{
     font-family: 'Abril Fatface', cursive;
     font-size: 5rem;
 }
-
-.forest-span{
-    color: rgb(255, 139, 93);
+.title{
+    position: relative;
+    overflow: hidden;
 }
-.hike-span{
+.forest-span{
     color: rgb(86, 124, 228);
 }
-.fashion-span{
+.hike-span{
     color: rgb(167, 110, 231);
+}
+.fashion-span{
+    color: rgb(255, 139, 93);
     
 }
 .desc-hero p{
@@ -104,6 +107,7 @@ section{
     text-decoration: none;
     align-self: flex-start;
 }
+
 .nav-bar{
     position: fixed;
     top: 0;
@@ -125,6 +129,7 @@ section{
 .burger{
     cursor: pointer;
 }
+
 .nav-bar{
     font-size: 4rem;
     flex-basis: 40rem;
@@ -159,17 +164,59 @@ section{
     height: 100%;
     background-color: #17181a;
 }
- .cursor{
+.cursor{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     /* background-color: white; */
     border: 1px solid white;
+    transform: translate(-50%,-50%);
     position: absolute;
+    pointer-events: none;
+    transition: background 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: 75% 75%;
+    color: #17181a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cursor.active{
+    background-color: lightblue;
+    transform: scale(3);
+}
+.cursor.exp{
+    background-color: white;
+    transform: scale(3);
+}
+.cursor-text{
+    font-size: 0.2rem;
 }
 .scrollmagic-pin-spacer{
     position: static !important;
 }
+.t-swip2{
+    background-color: rgb(167, 110, 231);
+}
+
+.t-swip3{
+    background-color: rgb(255, 139, 93);
+}
+
+.t-swip1{
+    background-color: rgb(86, 124, 228);
+    
+}
+
+.title-swip{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 103%;
+    height: 103%;
+    mix-blend-mode: darken;
+    transform: translateY(100%);
+} 
 /* .hike-exp{
     transition: all 0.4s ease-in-out;
 } 
