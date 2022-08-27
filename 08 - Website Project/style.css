@@ -229,11 +229,53 @@ section{
 .hide{
     overflow-y: hidden;
 }
-/* .hike-exp{
-    transition: all 0.4s ease-in-out;
-} 
-.active{
-    transform: scale(1.2);
-    background-color: white;
-    color: #17181a;
-} */
+.fashion{
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    padding-top: 4rem;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.fashion_img{
+    flex: 1;
+    overflow: hidden;
+    height: 80vh;
+    text-align: right;
+}
+.fashion_text{
+    flex: 1;
+    
+}
+.fashion_text h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+.fashion1 .fashion_text h2,.fashion1 .nr{
+    color: rgb(255, 139, 93);
+}
+.fashion2 .fashion_text h2,.fashion2 .nr{
+    color: rgb(86, 124, 228);
+}
+.fashion3 .fashion_text h2,.fashion3 .nr{
+    color: rgb(167, 110, 231);
+}
+.fashion_text p{
+    font-size: 2rem;
+    line-height: 1.8;
+}
+.fashion_img img{
+    width: 60%;
+    height: 100%;
+    object-fit: fill;
+    margin-left: auto;
+}
+.nr{
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    font-size: 10rem;
+    font-weight: 700;
+}
