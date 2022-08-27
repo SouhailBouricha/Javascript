@@ -14,6 +14,7 @@ body{
 }
 section{
     background-color: #17181a;
+    /* background: transparent; */
 }
 .nav-header{
     height: 10vh;
@@ -28,6 +29,7 @@ section{
     font-size: 1.5rem;
     font-family: 'Abril Fatface', cursive;
 }
+
 .line1{
     width: 3rem;
     height: 0.2rem;
@@ -119,7 +121,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0rem 5rem;
-    z-index: 1;
+   
     opacity: 1;
     gap: 3rem;
     justify-content: space-between;
@@ -178,12 +180,14 @@ section{
     transform-origin: 75% 75%;
     color: #17181a;
     display: flex;
+    
     align-items: center;
     justify-content: center;
 }
 .cursor.active{
     background-color: lightblue;
     transform: scale(3);
+    z-index: -1;
 }
 .cursor.exp{
     background-color: white;
