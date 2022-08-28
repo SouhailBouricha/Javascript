@@ -1,6 +1,7 @@
 let Controller;
 let Scene;
 let Scene2;
+let Scene3;
 const burger = document.querySelector(".burger");
 function AnimationSlides(){
     const slides = document.querySelectorAll(".slide");
@@ -87,6 +88,33 @@ function menuOpen(e){
     }
     console.log(e.target.children[1]);
 }
+function detailAnimation() {
+    controller = new ScrollMagic.Controller();
+    const slides = document.querySelectorAll(".detail-slide");
+    slides.forEach((slide, index, slides) => {
+      const slideTl = gsap.timeline({ defaults: { duration: 1 } });
+      let nextSlide = slides.length - 1 === index ? "end" : slides[index + 1];
+      const nextImg = nextSlide.querySelector("img");
+      slideTl.fromTo(slide, { opacity: 1 }, { opacity: 0 });
+      slideTl.fromTo(nextSlide, { opacity: 0 }, { opacity: 1 }, "-=1");
+      slideTl.fromTo(nextImg, { x: "50%" }, { x: "0%" });
+      //Scene
+      detailScene = new ScrollMagic.Scene({
+        triggerElement: slide,
+        duration: "100%",
+        triggerHook: 0
+      })
+        .setPin(slide, { pushFollowers: false })
+        .setTween(slideTl)
+        // .addIndicators({
+        //   colorStart: "white",
+        //   colorTrigger: "white",
+        //   name: "detailScene"
+        // })
+        .addTo(controller);
+    });
+  }
+
 const logo = document.querySelector('#logo');
 barba.init({
     views:[{
