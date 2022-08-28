@@ -87,5 +87,12 @@ function menuOpen(e){
     }
     console.log(e.target.children[1]);
 }
-
+barba.init({
+    views:[{
+        namespace:'home'
+    },
+    {
+        namespace:'fashion'
+    }]
+})
 AnimationSlides();

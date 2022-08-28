@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Travel Web Site</title>
   </head>
-  <body>
+  <body data-barba="wrapper">
     <header class="nav-header">
       <h1><a href="./index.html" id="logo">days.</a></h1>
       <div class="burger">
@@ -20,7 +20,7 @@
         <div class="line2"></div>
       </div>
     </header>
-    <main>
+    <main data-barba="container" data-barba-namespace="home">
       <section class="montain slide">
         <div class="hero-img-con">
           <img src="./imgs/forest.png" alt="forest" class="forest-img" />
@@ -127,6 +127,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- <script src="./exp.js"></script> -->
+    <script src="https://unpkg.com/@barba/core"></script>
     <script src="./app.js"></script>
   </body>
 </html>
