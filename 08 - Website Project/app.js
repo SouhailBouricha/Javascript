@@ -89,10 +89,17 @@ function menuOpen(e){
 }
 barba.init({
     views:[{
-        namespace:'home'
+        namespace:'home',
+        beforeEnter(){
+            AnimationSlides();
+        },
+        beforeLeave(){
+            Controller.destroy();
+            Scene.destroy();
+            Scene2.destroy();
+        }
     },
     {
         namespace:'fashion'
     }]
 })
-AnimationSlides();
