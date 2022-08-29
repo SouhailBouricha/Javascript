@@ -8,4 +8,5 @@
 - [x] Beatmaker Project
 - [x] Coloors Project
 - [x] Website Project
-- Misc
+- [x] Misc
+- Async JavaScript
