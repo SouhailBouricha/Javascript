@@ -6,6 +6,14 @@
 
 body{
     height: 100vh;
+    width: 100%;
+    background-color: #d6dbf0;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
 }
 
 
