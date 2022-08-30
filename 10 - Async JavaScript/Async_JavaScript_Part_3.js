@@ -6,7 +6,7 @@ function getData(type,url,async,callback){
         callback(xhr.response);
     }
 }
-    xhr.send();
+    xhr.send( );
 }
 
 function ShowData(data){
