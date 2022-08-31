@@ -17,18 +17,35 @@
 // console.log(Math.floor(Math.random() * 3));
 
 // window.showOpenFilePicker();
-async function ca(){
-    function doi() {
-        i = 0;
-        while(i<1000000000){
-            i++;
-        }
-        return i;
-    }
-    let i = await doi();
-    console.log(i);
-}
+// async function ca(){
+//     function doi() {
+//         i = 0;
+//         while(i<1000000000){
+//             i++;
+//         }
+//         return i;
+//     }
+//     let i = await doi();
+//     console.log(i);
+// }
 
-console.log("hi");
-ca();
-console.log("bey");
+// console.log("hi");
+// ca();
+// console.log("bey");
+// const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+
+// console.log(fetchPromise);
+
+// fetchPromise.then((response) => {
+//     console.log(`Received response: ${response.status}`);
+//   });
+
+// console.log("Started request…");
+const fetchPromise = fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+
+fetchPromise.then((response) => {
+  const jsonPromise = response.json();
+  jsonPromise.then((data) => {
+    console.log(data[0].name);
+  });
+});
