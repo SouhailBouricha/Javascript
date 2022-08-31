@@ -6,12 +6,12 @@
 //  and more responsive to user actions. Although X in Ajax stands for XML, JSON is preferred over XML nowadays
 //   because of its many advantages such as being a part of JavaScript, 
 // thus being lighter in size. Both JSON and XML are used for packaging information in the Ajax model.
-// let i = 0;
-// function ca(){
-//     i++;
-//     console.log(`${i}`);
-//     setTimeout(ca,1000);
-// }
+let i = 0;
+function ca(){
+    i++;
+    console.log(`${i}`);
+    setTimeout(ca,1000);
+}
 
-// ca();
-console.log(Math.floor(Math.random() * 3));
+ca();
+// console.log(Math.floor(Math.random() * 3));
