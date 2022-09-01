@@ -9,4 +9,5 @@
 - [x] Coloors Project
 - [x] Website Project
 - [x] Misc
-- Async JavaScript
+- [x] Async JavaScript
+- Photon Project
