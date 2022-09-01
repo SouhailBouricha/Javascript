@@ -12,6 +12,7 @@ header{
     align-items: center;
     justify-content: center;
     min-height: 30vh;
+    margin-bottom: 3rem;
 }
 header h2{
     padding: 2rem;
@@ -38,4 +39,50 @@ header .head{
     cursor: pointer;
     font-size: 1rem;
     border: none;
+}
+.galleryImg_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+}
+
+.galleryImg_info a{
+    color: gray;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    width: 90%;
+    margin: auto;
+    row-gap: 5rem;
+    min-height: 32vh;
+    column-gap: 2rem;
+}
+.galleryImg_child{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galleryImg_info{
+    padding: 1rem 0rem;
+}
+.galleryImg{
+    overflow: hidden;
+}
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+}
+.mor_btn{
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(131, 90, 185);
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
