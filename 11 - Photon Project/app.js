@@ -24,4 +24,4 @@ async function createdPhotos(){
         gallery.appendChild(galleryImg);
     });
 }
-// createdPhotos();
+createdPhotos();
