@@ -85,21 +85,41 @@
 // fetchProducts();
 // console.log('fbbfbf');
 
-async function fetchProducts() {
-    try {
-      const response = await fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
-      if (!response.ok) {
-        throw new Error(`HTTP error: ${response.status}`);
-      }
-      const data = await response.json();
-      return data;
-    }
-    catch (error) {
-      console.error(`Could not get products: ${error}`);
-    }
-  }
+// async function fetchProducts() {
+//     try {
+//       const response = await fetch('https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json');
+//       if (!response.ok) {
+//         throw new Error(`HTTP error: ${response.status}`);
+//       }
+//       const data = await response.json();
+//       return data;
+//     }
+//     catch (error) {
+//       console.error(`Could not get products: ${error}`);
+//     }
+//   }
   
-  const promise = fetchProducts();
-  console.log(promise.then(data =>{ 
-    console.log(data);
-  }));   // "promise" is a Promise object, so this will not work
+//   const promise = fetchProducts();
+//   console.log(promise.then(data =>{ 
+//     console.log(data);
+//   }));   // "promise" is a Promise object, so this will not work
+
+// const btn = document.querySelector(".button-36");
+
+// btn.addEventListener("click",(e) => {
+//   let aa;
+//   const promise = fetch("https://api.adviceslip.com/advice");
+//   promise.then(result => result.json()).then(data => {document.querySelector(".container").innerText = data.slip.advice;});
+// });
+
+
+
+async function doit(){
+  let response = await fetch("https://api.adviceslip.com/advice");
+  let data = await response.json();
+  document.querySelector(".container").innerText = data.slip.advice;
+}
+
+const btn = document.querySelector(".button-36");
+
+btn.addEventListener("click",doit);
