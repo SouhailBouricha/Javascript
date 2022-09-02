@@ -10,4 +10,4 @@
 - [x] Website Project
 - [x] Misc
 - [x] Async JavaScript
-- Photon Project
+- [x] Photon Project
