@@ -114,3 +114,9 @@ const FactoryFunction = string => {
   
   jeff.sayName(); //my name is jeff
   jeff.doSomethingNerdy(); // nerd stuff
+  
+const gh = (name) => {
+    const prototype = Person(name);
+    const doSomethingNerdy = () => console.log('nerd stuff');
+    return Object.assign({}, prototype, {doSomethingNerdy});
+}
