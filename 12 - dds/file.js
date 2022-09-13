@@ -30,3 +30,13 @@ console.log(name, color, number, food); // Maynard red 34 rice
 // the output is much easier to decipher:
 console.log({name, color, number, food});
  // { name: 'Maynard', color: 'red', number: 34, food: 'rice' }
+
+let a = 17;
+
+const func = x => {
+  let a = x;
+};
+
+func(99);
+
+console.log(a); // ???????
