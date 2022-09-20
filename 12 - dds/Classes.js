@@ -61,3 +61,9 @@ class Clock {
   
   console.log(Point.displayName);      // "Point"
   console.log(Point.distance(p1, p2)); // 7.0710678118654755
+
+  var moment = require('moment');
+console.log("Hello from JavaScript!");  
+console.log(moment().startOf('day').fromNow());
+var name = "Bob", time = "today";  
+console.log(`Hello ${name}, how are you ${time}?`);
