@@ -79,3 +79,6 @@ export { functionOne };
 import { functionOne } from './functionOne';
 
 functionOne(); // this should work as expected!
+const myName = (name) => 'Hi! My name is ' + name;
+
+export default myName;
