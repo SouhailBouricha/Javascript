@@ -82,3 +82,14 @@ functionOne(); // this should work as expected!
 const myName = (name) => 'Hi! My name is ' + name;
 
 export default myName;
+import myName from './myName';
+
+function component() {
+  const element = document.createElement('div');
+
+  // use your function!
+  element.textContent = myName('Cody');
+  return element;
+}
+
+document.body.appendChild(component());
