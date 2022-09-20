@@ -76,3 +76,6 @@ console.log(`Hello ${name}, how are you ${time}?`);
 const functionOne = () => console.log('FUNCTION ONE!');
 
 export { functionOne };
+import { functionOne } from './functionOne';
+
+functionOne(); // this should work as expected!
