@@ -122,3 +122,4 @@ export {
   functionOne,
   functionTwo
 };
+import {functiondOne, functionTwo} from './myModule';
