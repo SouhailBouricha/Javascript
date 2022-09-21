@@ -109,7 +109,7 @@ import myNasme from './myName';
 function component() {
   const element = document.createElement('div');
 
-  // use your function!
+  // use your function! tt
   element.textContent = myName('Cody');
   return element;
 }
