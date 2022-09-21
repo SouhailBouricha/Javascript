@@ -93,3 +93,7 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+const functionOnne = () => console.log('FUNCTION ONE!');
+
+export { functionOne };
