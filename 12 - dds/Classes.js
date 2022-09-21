@@ -97,3 +97,7 @@ document.body.appendChild(component());
 const functionOnne = () => console.log('FUNCTION ONE!');
 
 export { functionOne };
+// another JS file
+import { functionnOne } from './functionOne';
+
+functionOne(); // this should work as expected!
