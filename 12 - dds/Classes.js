@@ -115,7 +115,7 @@ function component() {
 }
 
 document.body.appendChild(component());
-const functcionOne = () => 'ONE';
+// const functcionOne = () => 'ONE';
 const functionTwo = () => 'TWO';
 
 export {
