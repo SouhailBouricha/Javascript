@@ -92,11 +92,6 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
-
-const functionOnne = () => console.log('FUNCTION ONE!');
-
-
 
 
 
