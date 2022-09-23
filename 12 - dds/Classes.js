@@ -100,11 +100,7 @@ export { functionOne };
 // another JS file
 import { functionnOne } from './functionOne';
 
-functionOne(); // this should work as expected!
-const myNadme = (name) => 'Hi! My name is ' + name;
 
-// export default myNadme;
-import myNasme from './myName';
 
 
 
