@@ -84,16 +84,6 @@ const myName = (name) => 'Hi! My name is ' + name;
 export default myName;
 import myName from './myName';
 
-function component() {
-  const element = document.createElement('div');
-
-  // use your function!
-  element.textContent = myName('Cody');
-  return element;
-}
-
-
-
 
 
 
