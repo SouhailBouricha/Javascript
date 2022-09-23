@@ -117,4 +117,3 @@ function component() {
 
 
 
-// import {functiondOne, functionTwo} from './myModule';
