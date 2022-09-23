@@ -118,8 +118,5 @@ document.body.appendChild(component());
 // const functcionOne = () => 'ONE';
 const functionTwo = () => 'TWO';
 
-export {
-  functionOne,
-  functionTwo
-};
+
 // import {functiondOne, functionTwo} from './myModule';
