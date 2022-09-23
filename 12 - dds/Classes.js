@@ -114,9 +114,7 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
-// const functcionOne = () => 'ONE';
-const functionTwo = () => 'TWO';
+
 
 
 // import {functiondOne, functionTwo} from './myModule';
