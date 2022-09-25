@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "csv-loader": "^3.0.5",
+    "xml-loader": "^1.2.1"
+  }
+}
